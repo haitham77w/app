@@ -1,0 +1,14 @@
+{
+  "name": "مساعد البحث الذكي",
+  "description": "تطبيق متطور للبحث الشامل في بياناتك وملفاتك باستخدام الذكاء الاصطناعي لتسهيل الوصول لكل ما تحتاجه في مكان واحد.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "AI Search",
+    "File Management",
+    "Data Analysis"
+  ]
+}
