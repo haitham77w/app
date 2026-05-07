@@ -21,8 +21,13 @@ jobs:
 
       - name: Build Android with Capacitor
         run: |
+          # تثبيت الأدوات اللازمة للسيرفر
+          npm install @capacitor/cli @capacitor/core @capacitor/android
+          # إضافة منصة أندرويد إذا لم تكن موجودة
           npx cap add android || true
+          # مزامنة الملفات
           npx cap sync android
+          # بناء الـ APK
           cd android && ./gradlew assembleDebug
 
       - name: Upload APK
